@@ -13,10 +13,16 @@ passando pelas camadas **Landing → Bronze → Silver → Gold**.
 
 `JSON bruto → Landing → Bronze → Silver → Gold`
 
-`Camada Landing -> JSON -> Zona de entrada dos dados, chegam sem alterações`
-`Camada Bronze -> Parquet -> Converte JSON para Parquet sem transformações`
-`Camada Silver -> Parquet -> Remove prefixo das colunas (customer_id → id)`
-`Camada Gold -> Parquet -> JOIN + agregação: pedidos por cidade e estado`
+```|     Camadas     |    Formato   |                         O que fazem                  |
+_________________________________________________________________________________________
+|     Landing     |     JSON     |   Zona de entrada dos dados, chegam sem alterações   |
+_________________________________________________________________________________________
+|     Bronze      |    Parquet   |     Converte JSON para Parquet sem transformações    |
+_________________________________________________________________________________________
+|     Silver      |    Parquet   |     Remove prefixo das colunas (customer_id → id)    |
+_________________________________________________________________________________________
+|      Gold       |    Parquet   |     JOIN + agregação: pedidos por cidade e estado    |
+```
 
 ## Tecnologias usadas
 
@@ -27,7 +33,7 @@ passando pelas camadas **Landing → Bronze → Silver → Gold**.
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 - Linux Ubuntu 20.04+
@@ -61,7 +67,7 @@ Acesse **http://localhost:8080** e execute o DAG `pipeline_lakehouse_completo`.
 
 ---
 
-## 📊 Resultado Final (Gold)
+## Resultado Final (Gold)
 
 | city | state | quantidade_pedidos | valor_total_pedidos |
 |------|-------|--------------------|---------------------|
