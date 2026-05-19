@@ -1,0 +1,7 @@
+[
+  {"customer_id": 1, "customer_name": "João Silva", "customer_city": "São Paulo", "customer_state": "SP"},
+  {"customer_id": 2, "customer_name": "Maria Santos", "customer_city": "Rio de Janeiro", "customer_state": "RJ"},
+  {"customer_id": 3, "customer_name": "Carlos Lima", "customer_city": "Curitiba", "customer_state": "PR"},
+  {"customer_id": 4, "customer_name": "Ana Costa", "customer_city": "Belo Horizonte", "customer_state": "MG"},
+  {"customer_id": 5, "customer_name": "Pedro Souza", "customer_city": "São Paulo", "customer_state": "SP"}
+]

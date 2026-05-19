@@ -1,0 +1,7 @@
+[
+  {"item_id": 1, "order_id": 101, "item_product": "Notebook", "item_quantity": 1, "item_price": 350.00},
+  {"item_id": 2, "order_id": 102, "item_product": "Celular", "item_quantity": 1, "item_price": 820.50},
+  {"item_id": 3, "order_id": 103, "item_product": "Fone de Ouvido", "item_quantity": 2, "item_price": 72.50},
+  {"item_id": 4, "order_id": 104, "item_product": "TV 50pol", "item_quantity": 1, "item_price": 1200.00},
+  {"item_id": 5, "order_id": 105, "item_product": "Cabo USB", "item_quantity": 3, "item_price": 29.90}
+]
